@@ -1,0 +1,11 @@
+.signup-page {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  background: url('/backgroundrect.png') no-repeat center top/cover;
+  background-size: 100% auto; /* Set width to full, height to auto */
+  background-position: top center;
+  padding-top: 200px; /* Push the form down */
+}

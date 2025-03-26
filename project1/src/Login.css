@@ -1,0 +1,11 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url('/backgroundrect.png') no-repeat center top/cover;
+  background-size: 100% auto;
+  background-position: top center;
+  padding-top: 200px;
+}
