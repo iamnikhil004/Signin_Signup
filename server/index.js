@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://budanianikhil2004:Nb@2004@@cluster.vrkaf.mongodb.net/", {
+mongoose.connect("mongodb+srv://budanianikhil2004:Nb%402004%40@cluster.vrkaf.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
