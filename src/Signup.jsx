@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Signup.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Signup.css";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -13,7 +13,7 @@ function Signup() {
     e.preventDefault();
     
     try {
-      const response = await fetch("https://signin-signup-1t0i.onrender.com", {
+      const response = await fetch("http://localhost:5000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

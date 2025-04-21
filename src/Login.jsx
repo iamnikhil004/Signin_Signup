@@ -12,31 +12,28 @@ function Login() {
     e.preventDefault();
 
     try {
-        const response = await fetch("https://signin-signup-1t0i.onrender.com", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email, password }), // ✅ Corrected placement
-        });
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-        const result = await response.json();
-        console.log("Login Response:", result);
+      const result = await response.json();
+      console.log("Login Response:", result);
 
-        if (result.data === "success") {
-            navigate('/home'); // Redirect on success
-        } else {
-            alert(result?.data || "Unexpected error occurred"); // Show error message from backend
-        }
+      if (result.message === "Login successful") {
+        navigate("/home"); // Redirect on success
+      } else {
+        alert(result?.error || "Unexpected error occurred");
+      }
 
     } catch (err) {
-        console.error("Error:", err);
-        alert("Failed to connect to the server. Please try again");
+      console.error("Error:", err);
+      alert("Failed to connect to the server. Please try again");
     }
-};
-
-
-
+  };
 
   return (
     <div className="login-page">
