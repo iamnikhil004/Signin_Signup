@@ -1,0 +1,34 @@
+{
+  "hash": "0bedd9b9",
+  "configHash": "638627dc",
+  "lockfileHash": "feb34681",
+  "browserHash": "591a15a0",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "bf6f6583",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ab51b119",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "73b60e88",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SY4HHCYH": {
+      "file": "chunk-SY4HHCYH.js"
+    },
+    "chunk-GT27OAPC": {
+      "file": "chunk-GT27OAPC.js"
+    }
+  }
+}
